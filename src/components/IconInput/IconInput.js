@@ -12,11 +12,11 @@ const IconInput = ({ label, icon, width = 250, size, placeholder }) => {
 			<VisuallyHidden>
 				<label>{label}</label>
 			</VisuallyHidden>
-        <Input
-          width={width}
-          size={size}
-          type="text"
-          placeholder={placeholder}></Input>
+			<Input
+				width={width}
+				size={size}
+				type="text"
+				placeholder={placeholder}></Input>
 			<IconWrapper>
 				<Icon
 					id={icon}
@@ -28,7 +28,7 @@ const IconInput = ({ label, icon, width = 250, size, placeholder }) => {
 	);
 };
 
-const Wrapper = styled.div`g
+const Wrapper = styled.div`
 	position: relative;
 `;
 
@@ -46,9 +46,9 @@ const Input = styled.input`
 		props.size === "small" ? "1px solid black" : "2px solid black"};
 	outline-offset: 1px;
 
-  &:hover {
-    color: ${COLORS.black};
-  }
+	&:hover {
+		color: ${COLORS.black};
+	}
 
 	&::placeholder {
 		color: ${COLORS.gray500};
